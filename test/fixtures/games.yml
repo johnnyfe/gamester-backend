@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  category: MyString
+  cost: 1
+  rate: 1
+  average_length: 1.5
+  img_url: MyString
+  storage_space: 1.5
+  console: one
+
+two:
+  name: MyString
+  category: MyString
+  cost: 1
+  rate: 1
+  average_length: 1.5
+  img_url: MyString
+  storage_space: 1.5
+  console: two

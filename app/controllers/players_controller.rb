@@ -14,13 +14,13 @@ class PlayersController < ApplicationController
 
     def create
         player = Player.create!(player_params)
-        render json: player
+        render json: player, except: [:updated_at, :created_at]
     end
 
     def update
         player = find_player
-        player.update(player_params)
-        render json: player
+        player.update!(player_params)
+        render json: player, except: [:updated_at, :created_at]
     end
 
     def destroy

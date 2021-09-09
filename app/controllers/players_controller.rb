@@ -4,23 +4,23 @@ class PlayersController < ApplicationController
 
     def index
         players = Player.all
-        render json: players, except: [:updated_at, :created_at]
+        render json: players
     end
 
     def show
         player = find_player
-        render json: player, except: [:updated_at, :created_at]
+        render json: player
     end
 
     def create
         player = Player.create!(player_params)
-        render json: player, except: [:updated_at, :created_at]
+        render json: player
     end
 
     def update
         player = find_player
         player.update!(player_params)
-        render json: player, except: [:updated_at, :created_at]
+        render json: player
     end
 
     def destroy

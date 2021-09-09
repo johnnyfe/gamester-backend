@@ -4,23 +4,23 @@ class GameplaysController < ApplicationController
 
     def index
         gameplays = Gameplay.all
-        render json: gameplays, except: [:updated_at, :created_at]
+        render json: gameplays
     end
 
     def show
         gameplay = find_gameplay
-        render json: gameplay, except: [:updated_at, :created_at], include: [:game ,:player]
+        render json: gameplay, include: [:game ,:player]
     end
 
     def create
         gameplay = Gameplay.create!(gameplay_params)
-        render json: gameplay, except: [:updated_at, :created_at]
+        render json: gameplay
     end
 
     def update
         gameplay = find_gameplay
         gameplay.update!(gameplay_params)
-        render json: gameplay, except: [:updated_at, :created_at]
+        render json: gameplay
     end
 
     def destroy

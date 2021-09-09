@@ -1,5 +1,5 @@
 class Player < ApplicationRecord
-    has_many :gameplays
+    has_many :gameplays, dependent: :destroy
     has_many :games, through: :gameplay
 
     validates :name, presence: true, uniqueness: true

@@ -40,11 +40,11 @@ class PlayersController < ApplicationController
     end
 
     def render_not_found
-        render json: { error: "player not found"}, status: :render_not_found
+        render json: { error: "player not found"}, status: :not_found
     end
 
     def render_unprocessable_entity(invalid)
-        render json: { error: invalid.record.errors.full_messages }, status: :render_unprocessable_entity
+        render json: { error: invalid.record.errors.full_messages }, status: :unprocessable_entity
     end
     
 end

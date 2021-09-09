@@ -17,7 +17,7 @@ class PlayersController < ApplicationController
         render json: player
     end
 
-    def updated
+    def update
         player = find_player
         player.update(player_params)
         render json: player

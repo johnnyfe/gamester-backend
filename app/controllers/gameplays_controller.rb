@@ -32,7 +32,7 @@ class GameplaysController < ApplicationController
     private
 
     def gameplay_params
-        params.require(:gameplay).permit(:game_time, :video_url, :title)
+        params.require(:gameplay).permit(:game_time, :video_url, :title, :likes)
     end
 
     def find_gameplay

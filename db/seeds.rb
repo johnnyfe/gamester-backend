@@ -48,11 +48,11 @@ puts "Seeding games"
 puts "Games seeding Completed"
 puts "Seeding gameplays"
 
-    gameplay1 = Gameplay.create(title: "#{player6.name} playing #{game5.name} in #{console1.name}", likes: 0, video_url: "https://www.youtube.com/embed/YeRCuCVFbns", player: player6, game: game5);
-    gameplay2 = Gameplay.create(title: "#{player3.name} playing #{game3.name} in #{console4.name}", likes: 0, video_url: "https://www.youtube.com/embed/8o6Snw5IEu4", player: player3, game: game3);
-    gameplay3 = Gameplay.create(title: "#{player8.name} playing #{game2.name} in #{console2.name}", likes: 0, video_url: "https://www.youtube.com/embed/GpKECYZWTp8", player: player8, game: game2);
-    gameplay4 = Gameplay.create(title: "#{player4.name} playing #{game9.name} in #{console2.name}", likes: 0, video_url: "https://www.youtube.com/embed/os8d6CqbiVs", player: player4, game: game9);
-    gameplay5 = Gameplay.create(title: "#{player2.name} playing #{game1.name} in #{console4.name}", likes: 0, video_url: "https://www.youtube.com/embed/VGt-BZ-SxGI", player: player2, game: game1);
-    gameplay6 = Gameplay.create(title: "#{player5.name} playing #{game6.name} in #{console3.name}", likes: 0, video_url: "https://www.youtube.com/embed/1CQyiM4n3IY", player: player5, game: game6);
+    gameplay1 = Gameplay.create(title: "#{player6.name} playing #{game5.name} in #{console1.name}", game_time: 43, likes: 0, video_url: "https://www.youtube.com/embed/YeRCuCVFbns", player: player6, game: game5);
+    gameplay2 = Gameplay.create(title: "#{player3.name} playing #{game3.name} in #{console4.name}", game_time: 43, likes: 0, video_url: "https://www.youtube.com/embed/8o6Snw5IEu4", player: player3, game: game3);
+    gameplay3 = Gameplay.create(title: "#{player8.name} playing #{game2.name} in #{console2.name}", game_time: 34, likes: 0, video_url: "https://www.youtube.com/embed/GpKECYZWTp8", player: player8, game: game2);
+    gameplay4 = Gameplay.create(title: "#{player4.name} playing #{game9.name} in #{console2.name}", game_time: 54, likes: 0, video_url: "https://www.youtube.com/embed/os8d6CqbiVs", player: player4, game: game9);
+    gameplay5 = Gameplay.create(title: "#{player2.name} playing #{game1.name} in #{console4.name}", game_time: 24, likes: 0, video_url: "https://www.youtube.com/embed/VGt-BZ-SxGI", player: player2, game: game1);
+    gameplay6 = Gameplay.create(title: "#{player5.name} playing #{game6.name} in #{console3.name}", game_time: 52, likes: 0, video_url: "https://www.youtube.com/embed/1CQyiM4n3IY", player: player5, game: game6);
 
 puts "Seeding Completed"

@@ -9,7 +9,7 @@ class GamesController < ApplicationController
 
     def show
         game = find_game
-        render json: game, include: :console
+        render json: game
     end
 
     def create

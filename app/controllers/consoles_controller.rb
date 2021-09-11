@@ -9,7 +9,7 @@ class ConsolesController < ApplicationController
 
     def show
         console = find_console
-        render json: console
+        render json: console, include: :games
     end
 
     def create

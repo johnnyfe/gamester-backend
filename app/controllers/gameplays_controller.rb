@@ -13,7 +13,7 @@ class GameplaysController < ApplicationController
     end
 
     def create
-        gameplay = Gameplay.create(gameplay_params)
+        gameplay = Gameplay.create!(gameplay_params)
         render json: gameplay
     end
 

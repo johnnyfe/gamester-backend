@@ -13,7 +13,7 @@ class GamesController < ApplicationController
     end
 
     def create
-        game = Game.create(game_params)
+        game = Game.create!(game_params)
         render json: game
     end
 
@@ -32,7 +32,7 @@ class GamesController < ApplicationController
     private
 
     def game_params
-        params.require(:game).permit(:name, :category, :cost, :rate, :average_length, :img_url, :storage_space)
+        params.permit(:name, :category, :cost, :rate, :average_length, :img_url, :storage_space, :console_id)
     end
 
     def find_game
